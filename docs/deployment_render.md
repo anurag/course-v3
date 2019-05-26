@@ -64,7 +64,13 @@ To run the app server locally, run this command in your terminal:
 python app/server.py serve
 ```
 
-Go to [http://localhost:5042/](http://localhost:5042/) to test your app.
+If you have Docker installed, you can test your changes in an environment similar to Render by running the following command at the root of your repo:
+
+```
+docker build -t fastai-v3 . && docker run --rm -it -p 5000:5000 fastai-v3
+```
+
+Go to [http://localhost:5040/](http://localhost:5000/) to test your app.
 
 ---
 
